@@ -117,7 +117,7 @@ print(correlations)
 
 # Visualizaciones
 fig, axes = plt.subplots(2, 3, figsize=(15, 10))
-fig.suptitle('Análisis Exploratorio de Datos - NYC Taxis', fontsize=16, fontweight='bold')
+fig.suptitle('Analisis Exploratorio de Datos - Taxis NYC', fontsize=16, fontweight='bold')
 
 # 1. Distribucion de precios
 axes[0, 0].hist(df['fare'], bins=50, color='skyblue', edgecolor='black')
@@ -262,7 +262,7 @@ reduce_lr = keras.callbacks.ReduceLROnPlateau(
 )
 
 print("\n🎓 Entrenando modelo...")
-print("   (Esto pdemora de 1 a 2 minutos)")
+print("   (Esto demora  de 1 a 2 minutos)")
 
 history = modelo.fit(
     X_train_scaled, y_train,
